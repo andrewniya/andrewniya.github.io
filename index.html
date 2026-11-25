@@ -1,0 +1,1227 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>丶天美丶梦幻丶mv入口_梦幻影像社区_原创视频官方平台</title>
+<meta name="description" content="丶天美丶梦幻丶mv入口官方网站，是面向创作者的原创影像视频社区品牌，提供高清MV、创意短片、正版音乐影像与深度内容生态，持续运营值得信赖。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314182b'/%3E%3Ccircle cx='32' cy='32' r='16' fill='none' stroke='%232ee6a6' stroke-width='3'/%3E%3Cpath d='M27 24l14 8-14 8z' fill='%232ee6a6'/%3E%3C/svg%3E">
+<style>
+:root{
+  --tm-dream-navy:#0d1220;
+  --tm-dream-ink:#14182b;
+  --tm-dream-mint:#2ee6a6;
+  --tm-dream-violet:#8b7bff;
+  --tm-dream-rose:#ff6f91;
+  --tm-dream-mist:#a9b2c9;
+  --tm-dream-line:#242a41;
+  --tm-dream-paper:#f5f7fb;
+  --tm-dream-card:#171d31;
+  --tm-dream-radius:18px;
+  --tm-dream-head-h:118px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--tm-dream-head-h) + 14px);}
+body{
+  margin:0;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  background:var(--tm-dream-navy);
+  color:#e8ecf6;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;}
+ul{margin:0;padding:0;list-style:none;}
+h1,h2,h3,h4{margin:0;line-height:1.32;font-weight:700;}
+p{margin:0 0 14px;}
+.tm-dream-wrap{width:min(1180px,92vw);margin:0 auto;}
+
+/* ===== 吸顶区 ===== */
+.tm-dream-sticky{
+  position:sticky;top:0;z-index:120;
+  backdrop-filter:blur(14px);
+  background:rgba(13,18,32,.92);
+  border-bottom:1px solid var(--tm-dream-line);
+}
+.tm-dream-notice{
+  display:flex;align-items:center;gap:10px;
+  padding:9px 0;font-size:13px;color:#c8d1e6;
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.tm-dream-notice-tag{
+  flex:none;background:linear-gradient(90deg,var(--tm-dream-mint),var(--tm-dream-violet));
+  color:#08111a;font-weight:800;border-radius:6px;padding:2px 9px;font-size:12px;letter-spacing:.5px;
+}
+.tm-dream-notice-track{overflow:hidden;flex:1;min-width:0;white-space:nowrap;text-overflow:ellipsis;}
+
+.tm-dream-head{
+  display:flex;align-items:center;gap:22px;
+  padding:14px 0;
+}
+.tm-dream-brand{display:flex;align-items:center;gap:11px;flex:none;}
+.tm-dream-brand-mark{
+  width:42px;height:42px;border-radius:12px;
+  background:radial-gradient(circle at 30% 25%,var(--tm-dream-violet),#1b2140 70%);
+  border:1px solid #333c5e;
+  display:grid;place-items:center;font-weight:800;color:var(--tm-dream-mint);font-size:15px;
+}
+.tm-dream-brand-txt strong{display:block;font-size:16px;letter-spacing:.5px;}
+.tm-dream-brand-txt span{display:block;font-size:11px;color:var(--tm-dream-mist);letter-spacing:1.6px;}
+
+.tm-dream-nav{display:flex;gap:4px;flex:1;flex-wrap:wrap;}
+.tm-dream-nav a{
+  padding:7px 13px;border-radius:9px;font-size:14px;color:#c3cbe0;transition:.2s;
+}
+.tm-dream-nav a:hover{background:#1e2540;color:#fff;}
+
+.tm-dream-head-tools{display:flex;align-items:center;gap:10px;flex:none;}
+.tm-dream-search{
+  display:flex;align-items:center;gap:6px;
+  background:#171d31;border:1px solid var(--tm-dream-line);
+  border-radius:999px;padding:6px 8px 6px 14px;
+}
+.tm-dream-search input{
+  background:transparent;border:0;outline:none;color:#e8ecf6;width:150px;font-size:13px;
+}
+.tm-dream-search input::placeholder{color:#6d7793;}
+.tm-dream-search button{
+  border:0;border-radius:999px;padding:5px 13px;font-size:13px;
+  background:var(--tm-dream-mint);color:#06251c;font-weight:700;
+}
+.tm-dream-btn-ghost{
+  border:1px solid var(--tm-dream-line);background:#181f34;color:#dfe5f2;
+  border-radius:999px;padding:8px 16px;font-size:13px;transition:.2s;
+}
+.tm-dream-btn-ghost:hover{border-color:var(--tm-dream-mint);color:var(--tm-dream-mint);}
+.tm-dream-burger{display:none;background:#181f34;border:1px solid var(--tm-dream-line);color:#fff;border-radius:10px;padding:7px 12px;font-size:17px;}
+
+.tm-dream-mobile-nav{display:none;padding:6px 0 14px;}
+.tm-dream-mobile-nav.open{display:block;}
+.tm-dream-mobile-nav a{display:block;padding:10px 12px;border-radius:9px;color:#c9d2e8;font-size:14px;}
+.tm-dream-mobile-nav a:hover{background:#1b2238;}
+
+/* ===== 首屏 ===== */
+.tm-dream-hero{padding:52px 0 30px;position:relative;overflow:hidden;}
+.tm-dream-hero::before{
+  content:"";position:absolute;inset:-120px -10% auto auto;width:640px;height:640px;
+  background:radial-gradient(circle,rgba(139,123,255,.28),transparent 65%);pointer-events:none;
+}
+.tm-dream-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:44px;align-items:center;}
+.tm-dream-hero-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;letter-spacing:1.4px;
+  color:var(--tm-dream-mint);border:1px solid rgba(46,230,166,.4);border-radius:999px;padding:5px 14px;margin-bottom:18px;
+}
+.tm-dream-hero h1{
+  font-size:clamp(30px,4.4vw,50px);line-height:1.22;letter-spacing:-.5px;
+  background:linear-gradient(100deg,#ffffff 20%,var(--tm-dream-mint) 55%,var(--tm-dream-violet));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.tm-dream-hero-lead{margin:18px 0 20px;color:#b6c0d6;font-size:16px;max-width:50ch;}
+.tm-dream-hero-note{font-size:14px;color:#96a1ba;border-left:3px solid var(--tm-dream-violet);padding-left:14px;margin-bottom:24px;}
+.tm-dream-btn-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px;}
+.tm-dream-btn{
+  border:0;border-radius:11px;padding:12px 24px;font-size:14.5px;font-weight:700;transition:.22s;
+  background:linear-gradient(95deg,var(--tm-dream-mint),#37d9ff);color:#062018;
+}
+.tm-dream-btn:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(46,230,166,.28);}
+.tm-dream-btn-2{background:transparent;color:#dfe6f5;border:1px solid #35405f;}
+.tm-dream-btn-2:hover{border-color:var(--tm-dream-violet);box-shadow:none;color:#fff;}
+.tm-dream-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;}
+.tm-dream-stat{background:rgba(23,29,49,.72);border:1px solid var(--tm-dream-line);border-radius:14px;padding:13px 15px;}
+.tm-dream-stat b{display:block;font-size:22px;color:var(--tm-dream-mint);letter-spacing:.5px;}
+.tm-dream-stat span{font-size:12.5px;color:#939db6;}
+
+.tm-dream-hero-visual{position:relative;border-radius:24px;overflow:hidden;border:1px solid #2b3350;box-shadow:0 30px 70px rgba(0,0,0,.48);}
+.tm-dream-hero-visual img{width:100%;height:auto;aspect-ratio:16/11;object-fit:cover;}
+.tm-dream-hero-badge{
+  position:absolute;left:16px;bottom:16px;display:flex;align-items:center;gap:10px;
+  background:rgba(9,13,24,.82);border:1px solid #35405f;border-radius:12px;padding:9px 14px;font-size:12.5px;color:#d7deef;backdrop-filter:blur(6px);
+}
+.tm-dream-live-dot{width:8px;height:8px;border-radius:50%;background:var(--tm-dream-rose);box-shadow:0 0 0 4px rgba(255,111,145,.2);}
+
+/* ===== 通用 section ===== */
+.tm-dream-section{padding:52px 0;border-top:1px solid rgba(255,255,255,.06);}
+.tm-dream-sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:26px;}
+.tm-dream-sec-kicker{font-size:12px;letter-spacing:2.4px;color:var(--tm-dream-violet);font-weight:700;}
+.tm-dream-sec-head h2{font-size:clamp(21px,2.5vw,28px);margin-top:6px;}
+.tm-dream-sec-desc{font-size:13.5px;color:#8e99b3;max-width:52ch;}
+
+/* 焦点大图 + 文字推荐 */
+.tm-dream-focus-grid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:24px;}
+.tm-dream-focus-main{
+  background:var(--tm-dream-card);border:1px solid var(--tm-dream-line);border-radius:var(--tm-dream-radius);
+  overflow:hidden;display:flex;flex-direction:column;transition:.25s;
+}
+.tm-dream-focus-main:hover{border-color:#3a4468;transform:translateY(-3px);}
+.tm-dream-focus-main img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+.tm-dream-focus-body{padding:20px 22px 22px;}
+.tm-dream-tag{
+  display:inline-block;font-size:11.5px;letter-spacing:.6px;color:var(--tm-dream-mint);
+  border:1px solid rgba(46,230,166,.35);border-radius:6px;padding:2px 9px;margin-right:6px;margin-bottom:10px;
+}
+.tm-dream-focus-body h3{font-size:20px;margin:6px 0 10px;}
+.tm-dream-focus-body p{font-size:14px;color:#a5aec5;margin-bottom:14px;}
+.tm-dream-meta{display:flex;flex-wrap:wrap;gap:12px;font-size:12.5px;color:#7d88a4;}
+.tm-dream-mini-list{display:flex;flex-direction:column;gap:12px;}
+.tm-dream-mini{
+  display:flex;gap:14px;align-items:flex-start;background:rgba(23,29,49,.6);
+  border:1px solid var(--tm-dream-line);border-radius:14px;padding:14px 16px;transition:.2s;
+}
+.tm-dream-mini:hover{background:#1c2340;border-color:#3a4468;}
+.tm-dream-mini-idx{flex:none;font-size:18px;font-weight:800;color:#39446a;min-width:26px;}
+.tm-dream-mini h4{font-size:15px;margin-bottom:5px;}
+.tm-dream-mini p{font-size:13px;color:#929db7;margin:0;}
+.tm-dream-mini-meta{font-size:12px;color:#6f7a96;margin-top:6px;}
+
+/* 视频列表 */
+.tm-dream-video-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:26px;}
+.tm-dream-video-feature{background:var(--tm-dream-card);border:1px solid var(--tm-dream-line);border-radius:var(--tm-dream-radius);overflow:hidden;}
+.tm-dream-video-feature img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+.tm-dream-video-feature-body{padding:18px 20px;}
+.tm-dream-video-feature-body h3{font-size:19px;margin-bottom:8px;}
+.tm-dream-video-feature-body p{font-size:13.5px;color:#a2abc2;}
+.tm-dream-video-rows{display:flex;flex-direction:column;gap:12px;}
+.tm-dream-vrow{
+  background:rgba(23,29,49,.55);border:1px solid var(--tm-dream-line);border-radius:14px;
+  padding:14px 16px;display:flex;gap:14px;align-items:center;transition:.2s;
+}
+.tm-dream-vrow:hover{background:#1c2340;}
+.tm-dream-vrow-thumb{width:78px;height:52px;border-radius:9px;flex:none;overflow:hidden;position:relative;}
+.tm-dream-vrow-thumb img{width:100%;height:100%;object-fit:cover;}
+.tm-dream-vrow-main{flex:1;min-width:0;}
+.tm-dream-vrow-main h4{font-size:14.5px;margin-bottom:4px;}
+.tm-dream-vrow-main p{font-size:12.5px;color:#8f9ab4;margin:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.tm-dream-vrow-side{display:flex;flex-direction:column;align-items:flex-end;gap:6px;flex:none;}
+.tm-dream-num{font-size:12px;color:#7c87a3;}
+.tm-dream-like{
+  background:transparent;border:1px solid var(--tm-dream-line);color:#b7c0d6;
+  border-radius:8px;padding:3px 10px;font-size:12px;transition:.2s;
+}
+.tm-dream-like.on{border-color:var(--tm-dream-rose);color:var(--tm-dream-rose);background:rgba(255,111,145,.1);}
+
+/* 关键词解析 */
+.tm-dream-parse{background:linear-gradient(180deg,rgba(139,123,255,.08),transparent 65%);}
+.tm-dream-parse-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:34px;}
+.tm-dream-parse h3{font-size:17.5px;color:#e4e9f6;margin:22px 0 9px;padding-left:12px;border-left:3px solid var(--tm-dream-mint);}
+.tm-dream-parse h3:first-child{margin-top:0;}
+.tm-dream-parse p{font-size:14.5px;color:#a9b3c9;line-height:1.85;}
+.tm-dream-parse-card{
+  background:var(--tm-dream-card);border:1px solid var(--tm-dream-line);border-radius:var(--tm-dream-radius);
+  padding:22px;height:fit-content;position:sticky;top:calc(var(--tm-dream-head-h) + 20px);
+}
+.tm-dream-parse-card h4{font-size:15px;margin-bottom:14px;color:var(--tm-dream-mint);}
+.tm-dream-parse-card li{display:flex;justify-content:space-between;gap:10px;font-size:13px;color:#a9b3c9;padding:9px 0;border-bottom:1px dashed #262d45;}
+.tm-dream-parse-card li:last-child{border-bottom:0;}
+.tm-dream-parse-card b{color:#eaf0fd;font-weight:600;}
+
+/* 专题 */
+.tm-dream-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;}
+.tm-dream-topic{
+  background:var(--tm-dream-card);border:1px solid var(--tm-dream-line);border-radius:var(--tm-dream-radius);
+  padding:20px;display:flex;flex-direction:column;transition:.22s;
+}
+.tm-dream-topic:hover{transform:translateY(-4px);border-color:#3f4a72;}
+.tm-dream-topic h3{font-size:16.5px;margin-bottom:8px;}
+.tm-dream-topic .tm-dream-topic-desc{font-size:13px;color:#96a1ba;margin-bottom:12px;}
+.tm-dream-status{font-size:11.5px;color:var(--tm-dream-mint);border:1px dashed rgba(46,230,166,.5);border-radius:999px;padding:2px 10px;align-self:flex-start;margin-bottom:14px;}
+.tm-dream-topic ul li{font-size:13px;color:#b0bad0;padding:7px 0 7px 16px;position:relative;}
+.tm-dream-topic ul li::before{content:"";position:absolute;left:0;top:15px;width:6px;height:6px;border-radius:50%;background:var(--tm-dream-violet);}
+
+/* 作者矩阵 */
+.tm-dream-author-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;}
+.tm-dream-author{
+  background:var(--tm-dream-card);border:1px solid var(--tm-dream-line);border-radius:16px;padding:18px;text-align:center;transition:.22s;
+}
+.tm-dream-author:hover{border-color:#3f4a72;transform:translateY(-3px);}
+.tm-dream-avatar{
+  width:60px;height:60px;border-radius:50%;margin:0 auto 12px;display:grid;place-items:center;
+  font-weight:800;font-size:21px;color:#08111a;border:2px solid rgba(255,255,255,.14);
+}
+.tm-dream-author h3{font-size:15.5px;margin-bottom:4px;}
+.tm-dream-author .tm-dream-author-field{font-size:12px;color:var(--tm-dream-mint);margin-bottom:8px;}
+.tm-dream-author p{font-size:12.5px;color:#94a0ba;line-height:1.7;text-align:left;margin-bottom:10px;}
+.tm-dream-author-nums{display:flex;justify-content:center;gap:14px;font-size:12px;color:#7f8aa5;border-top:1px solid #242b42;padding-top:10px;}
+.tm-dream-author-nums b{color:#e6ebf7;font-weight:600;}
+.tm-dream-author-more{margin-top:10px;}
+.tm-dream-author-more button{
+  border:1px solid var(--tm-dream-line);background:transparent;color:#aab4cc;border-radius:8px;
+  font-size:12px;padding:4px 12px;transition:.2s;
+}
+.tm-dream-author-more button:hover{border-color:var(--tm-dream-mint);color:var(--tm-dream-mint);}
+
+/* 榜单 */
+.tm-dream-rank-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;}
+.tm-dream-rank-card{background:rgba(23,29,49,.65);border:1px solid var(--tm-dream-line);border-radius:var(--tm-dream-radius);padding:20px;}
+.tm-dream-rank-card h3{font-size:15.5px;margin-bottom:14px;display:flex;align-items:center;gap:8px;}
+.tm-dream-rank-card h3 span{width:6px;height:16px;border-radius:3px;background:var(--tm-dream-mint);display:inline-block;}
+.tm-dream-rank-card li{display:flex;gap:10px;align-items:center;padding:8px 0;border-bottom:1px dashed #232a42;font-size:13px;color:#b3bdd2;}
+.tm-dream-rank-card li:last-child{border-bottom:0;}
+.tm-dream-rank-no{font-weight:800;color:#4b5680;width:18px;flex:none;}
+.tm-dream-rank-card li:nth-child(1) .tm-dream-rank-no{color:var(--tm-dream-mint);}
+.tm-dream-rank-card li:nth-child(2) .tm-dream-rank-no{color:var(--tm-dream-violet);}
+
+/* 用户评价 */
+.tm-dream-comment-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}
+.tm-dream-comment{
+  background:var(--tm-dream-card);border:1px solid var(--tm-dream-line);border-radius:14px;padding:18px;
+}
+.tm-dream-comment-top{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
+.tm-dream-comment-avatar{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:700;color:#08111a;flex:none;}
+.tm-dream-comment-top b{font-size:13.5px;display:block;}
+.tm-dream-comment-top span{font-size:11.5px;color:#7e89a4;}
+.tm-dream-comment p{font-size:13.5px;color:#a9b3c9;margin:0;}
+.tm-dream-stars{color:#ffce6b;font-size:12px;letter-spacing:1px;}
+
+/* 企业动态 */
+.tm-dream-news-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}
+.tm-dream-news{
+  display:flex;gap:16px;background:rgba(23,29,49,.55);border:1px solid var(--tm-dream-line);
+  border-radius:14px;padding:16px;align-items:flex-start;
+}
+.tm-dream-news-time{flex:none;font-size:12px;color:var(--tm-dream-violet);border:1px solid #333c5e;border-radius:8px;padding:6px 10px;text-align:center;line-height:1.4;}
+.tm-dream-news h4{font-size:14.5px;margin-bottom:5px;}
+.tm-dream-news p{font-size:12.8px;color:#95a0ba;margin:0;}
+
+/* FAQ */
+.tm-dream-faq{display:flex;flex-direction:column;gap:10px;}
+.tm-dream-faq details{
+  background:var(--tm-dream-card);border:1px solid var(--tm-dream-line);border-radius:12px;padding:14px 18px;transition:.2s;
+}
+.tm-dream-faq details[open]{border-color:#3f4a72;}
+.tm-dream-faq summary{
+  cursor:pointer;font-size:14.5px;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:14px;align-items:center;
+}
+.tm-dream-faq summary::-webkit-details-marker{display:none;}
+.tm-dream-faq summary::after{content:"+";color:var(--tm-dream-mint);font-size:18px;font-weight:400;}
+.tm-dream-faq details[open] summary::after{content:"−";}
+.tm-dream-faq p{font-size:13.5px;color:#a5afc5;margin:12px 0 0;padding-top:10px;border-top:1px dashed #242b42;}
+
+/* 合作 + 投稿 */
+.tm-dream-partner-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;}
+.tm-dream-partner{
+  background:rgba(23,29,49,.5);border:1px solid var(--tm-dream-line);border-radius:12px;
+  padding:16px 10px;text-align:center;font-size:13px;color:#b3bdd2;transition:.2s;
+}
+.tm-dream-partner:hover{border-color:var(--tm-dream-violet);color:#fff;}
+.tm-dream-submit{
+  margin-top:26px;background:linear-gradient(100deg,rgba(46,230,166,.14),rgba(139,123,255,.16));
+  border:1px solid #35405f;border-radius:var(--tm-dream-radius);padding:26px;
+  display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;
+}
+.tm-dream-submit h3{font-size:18px;margin-bottom:6px;}
+.tm-dream-submit p{font-size:13.5px;color:#a5afc5;margin:0;}
+
+/* 页脚 */
+.tm-dream-footer{border-top:1px solid var(--tm-dream-line);padding:44px 0 26px;background:#0a0f1b;}
+.tm-dream-footer-grid{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:26px;margin-bottom:30px;}
+.tm-dream-footer h4{font-size:14px;color:#dbe2f0;margin-bottom:12px;}
+.tm-dream-footer li{font-size:13px;color:#8a95af;padding:4px 0;}
+.tm-dream-footer li a:hover{color:var(--tm-dream-mint);}
+.tm-dream-footer-about p{font-size:13px;color:#8a95af;max-width:38ch;}
+.tm-dream-footer-bottom{border-top:1px solid #1c2338;padding-top:18px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12.5px;color:#6f7a96;}
+
+/* 弹窗 & toast */
+.tm-dream-modal{
+  position:fixed;inset:0;z-index:300;display:none;align-items:center;justify-content:center;padding:20px;
+  background:rgba(5,8,16,.7);backdrop-filter:blur(4px);
+}
+.tm-dream-modal.open{display:flex;}
+.tm-dream-modal-box{
+  background:#141a2c;border:1px solid #333d5e;border-radius:18px;max-width:460px;width:100%;
+  padding:26px;box-shadow:0 30px 70px rgba(0,0,0,.6);
+}
+.tm-dream-modal-box h3{font-size:18px;margin-bottom:10px;}
+.tm-dream-modal-box p{font-size:13.5px;color:#a5afc5;}
+.tm-dream-modal-box .tm-dream-modal-close{
+  float:right;background:transparent;border:1px solid #333d5e;color:#a5afc5;border-radius:8px;padding:2px 10px;font-size:14px;
+}
+.tm-dream-field{margin-top:14px;}
+.tm-dream-field label{display:block;font-size:12.5px;color:#8d98b3;margin-bottom:5px;}
+.tm-dream-field input,.tm-dream-field textarea{
+  width:100%;background:#0f1524;border:1px solid #2b3350;border-radius:9px;padding:9px 12px;
+  color:#e8ecf6;font-size:13.5px;outline:none;font-family:inherit;
+}
+.tm-dream-field input:focus,.tm-dream-field textarea:focus{border-color:var(--tm-dream-mint);}
+.tm-dream-modal-actions{margin-top:18px;display:flex;gap:10px;}
+.tm-dream-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);z-index:400;
+  background:#1b2340;border:1px solid var(--tm-dream-mint);color:#eafff7;border-radius:999px;
+  padding:10px 22px;font-size:13.5px;opacity:0;pointer-events:none;transition:.28s;
+}
+.tm-dream-toast.show{opacity:1;transform:translate(-50%,0);}
+.tm-dream-top{
+  position:fixed;right:22px;bottom:24px;z-index:200;width:46px;height:46px;border-radius:50%;
+  border:1px solid #35405f;background:#171d31;color:var(--tm-dream-mint);font-size:18px;
+  display:none;place-items:center;transition:.2s;
+}
+.tm-dream-top.show{display:grid;}
+.tm-dream-top:hover{background:#1f2742;}
+
+/* 搜索反馈 */
+.tm-dream-search-feedback{font-size:12.5px;color:var(--tm-dream-mint);padding:0 0 8px;}
+.tm-dream-hidden{display:none !important;}
+
+/* 响应式 */
+@media(max-width:1024px){
+  .tm-dream-hero-grid,.tm-dream-video-layout,.tm-dream-parse-grid{grid-template-columns:minmax(0,1fr);}
+  .tm-dream-focus-grid{grid-template-columns:minmax(0,1fr);}
+  .tm-dream-topic-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .tm-dream-author-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .tm-dream-rank-grid{grid-template-columns:minmax(0,1fr);}
+  .tm-dream-partner-grid{grid-template-columns:repeat(3,minmax(0,1fr));}
+  .tm-dream-footer-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);}
+  .tm-dream-parse-card{position:static;}
+}
+@media(max-width:860px){
+  .tm-dream-nav{display:none;}
+  .tm-dream-burger{display:inline-block;}
+  .tm-dream-search input{width:110px;}
+}
+@media(max-width:680px){
+  :root{--tm-dream-head-h:104px;}
+  .tm-dream-head{flex-wrap:wrap;gap:12px;}
+  .tm-dream-head-tools{width:100%;}
+  .tm-dream-search{flex:1;}
+  .tm-dream-search input{width:100%;}
+  .tm-dream-hero{padding:34px 0 16px;}
+  .tm-dream-stats{grid-template-columns:minmax(0,1fr);}
+  .tm-dream-topic-grid,.tm-dream-author-grid,.tm-dream-comment-grid,.tm-dream-news-grid{grid-template-columns:minmax(0,1fr);}
+  .tm-dream-partner-grid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .tm-dream-footer-grid{grid-template-columns:minmax(0,1fr);}
+  .tm-dream-submit{flex-direction:column;align-items:flex-start;}
+  .tm-dream-notice{font-size:12px;}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<div class="tm-dream-sticky">
+  <div class="tm-dream-notice">
+    <div class="tm-dream-wrap tm-dream-notice-inner" style="display:flex;align-items:center;gap:10px;width:100%;">
+      <span class="tm-dream-notice-tag">官方发布</span>
+      <div class="tm-dream-notice-track">「梦幻影像季」2026 冬季征片开启：新增 4 个原创 MV 赛道，投稿截止 12 月 20 日；本周上线 12 支高清正版 MV 首映。</div>
+    </div>
+  </div>
+  <div class="tm-dream-wrap">
+    <header class="tm-dream-head">
+      <a class="tm-dream-brand" href="#tm-dream-top">
+        <span class="tm-dream-brand-mark">梦</span>
+        <span class="tm-dream-brand-txt">
+          <strong>丶天美丶梦幻丶MV</strong>
+          <span>DREAM MV STUDIO</span>
+        </span>
+      </a>
+      <nav class="tm-dream-nav" aria-label="主导航">
+        <a href="#tm-dream-focus">焦点内容</a>
+        <a href="#tm-dream-videos">MV 视频库</a>
+        <a href="#tm-dream-parse">品牌解析</a>
+        <a href="#tm-dream-topics">专题企划</a>
+        <a href="#tm-dream-authors">创作者</a>
+        <a href="#tm-dream-rank">榜单</a>
+        <a href="#tm-dream-faq">帮助</a>
+      </nav>
+      <div class="tm-dream-head-tools">
+        <div class="tm-dream-search">
+          <input id="tmDreamSearchInput" type="search" placeholder="搜索 MV、创作者、专题" aria-label="站内搜索">
+          <button id="tmDreamSearchBtn" type="button">搜索</button>
+        </div>
+        <button class="tm-dream-btn-ghost" id="tmDreamSubmitBtn" type="button">投稿</button>
+        <button class="tm-dream-burger" id="tmDreamBurger" type="button" aria-label="展开导航" aria-expanded="false">☰</button>
+      </div>
+    </header>
+    <div class="tm-dream-mobile-nav" id="tmDreamMobileNav">
+      <a href="#tm-dream-focus">焦点内容</a>
+      <a href="#tm-dream-videos">MV 视频库</a>
+      <a href="#tm-dream-parse">品牌解析</a>
+      <a href="#tm-dream-topics">专题企划</a>
+      <a href="#tm-dream-authors">创作者</a>
+      <a href="#tm-dream-rank">榜单</a>
+      <a href="#tm-dream-comments">用户评价</a>
+      <a href="#tm-dream-faq">帮助</a>
+    </div>
+  </div>
+</div>
+
+<main id="tm-dream-top">
+
+  <!-- 首屏 -->
+  <section class="tm-dream-hero">
+    <div class="tm-dream-wrap tm-dream-hero-grid">
+      <div>
+        <span class="tm-dream-hero-eyebrow">官方网站 · 原创影像视频社区</span>
+        <h1>丶天美丶梦幻丶mv入口</h1>
+        <p class="tm-dream-hero-lead">把一首歌的想象力拍成画面。这里是面向创作者、音乐人与影像团队的企业级原创 MV 内容平台，从创意脚本到高清成片，全程记录每一次梦境的形状。</p>
+        <p class="tm-dream-hero-note">作为持续运营的影像品牌与官方内容生态，我们坚持正版授权、高清出品与创作者共成长，让每一支原创 MV 都值得被认真对待。</p>
+        <div class="tm-dream-btn-row">
+          <a class="tm-dream-btn" href="#tm-dream-videos">立即观看 MV</a>
+          <a class="tm-dream-btn tm-dream-btn-2" href="#tm-dream-authors">认识创作者</a>
+          <a class="tm-dream-btn tm-dream-btn-2" href="#tm-dream-topics">查看专题</a>
+        </div>
+        <div class="tm-dream-stats">
+          <div class="tm-dream-stat"><b>2,860+</b><span>原创 MV 作品入库</span></div>
+          <div class="tm-dream-stat"><b>18.4 亿</b><span>平台累计播放次数</span></div>
+          <div class="tm-dream-stat"><b>420 位</b><span>签约与入驻创作者</span></div>
+        </div>
+      </div>
+      <div class="tm-dream-hero-visual">
+        <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 550'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23121a33'/%3E%3Cstop offset='0.55' stop-color='%232b1e57'/%3E%3Cstop offset='1' stop-color='%230b1224'/%3E%3C/linearGradient%3E%3CradialGradient id='glow' cx='0.5' cy='0.5' r='0.5'%3E%3Cstop offset='0' stop-color='%232ee6a6' stop-opacity='0.55'/%3E%3Cstop offset='1' stop-color='%232ee6a6' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='800' height='550' fill='url(%23bg)'/%3E%3Ccircle cx='560' cy='190' r='190' fill='url(%23glow)'/%3E%3Ccircle cx='220' cy='380' r='120' fill='%238b7bff' opacity='0.18'/%3E%3Cg stroke='%23ffffff' stroke-opacity='0.1'%3E%3Cpath d='M0 430 L800 300'/%3E%3Cpath d='M0 470 L800 350'/%3E%3Cpath d='M0 510 L800 400'/%3E%3C/g%3E%3Ccircle cx='400' cy='262' r='86' fill='none' stroke='%232ee6a6' stroke-width='2.5' opacity='0.75'/%3E%3Ccircle cx='400' cy='262' r='120' fill='none' stroke='%238b7bff' stroke-width='1.4' opacity='0.5' stroke-dasharray='7 9'/%3E%3Cpath d='M376 220 L448 262 L376 304 Z' fill='%232ee6a6'/%3E%3Cg fill='%23ffffff' opacity='0.55'%3E%3Crect x='96' y='96' width='86' height='6' rx='3'/%3E%3Crect x='96' y='116' width='52' height='6' rx='3'/%3E%3C/g%3E%3Cg fill='%238b7bff' opacity='0.8'%3E%3Ccircle cx='690' cy='430' r='7'/%3E%3Ccircle cx='660' cy='430' r='7'/%3E%3Ccircle cx='630' cy='430' r='7'/%3E%3C/g%3E%3C/svg%3E" alt="丶天美丶梦幻丶mv入口官方网站首屏主视觉：发光圆环内的播放符号与星空舞台构图" width="800" height="550">
+        <div class="tm-dream-hero-badge"><span class="tm-dream-live-dot"></span>本周首映 · 12 支高清原创 MV 已上线</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点内容 -->
+  <section class="tm-dream-section" id="tm-dream-focus">
+    <div class="tm-dream-wrap">
+      <div class="tm-dream-sec-head">
+        <div>
+          <div class="tm-dream-sec-kicker">FOCUS · 焦点推荐</div>
+          <h2>本周焦点：丶天美丶梦幻丶MV 精品内容首发</h2>
+        </div>
+        <p class="tm-dream-sec-desc">由官方编辑部与创作者共同遴选的高品质 MV 首映、幕后纪实与影像企划，每周四更新。</p>
+      </div>
+      <div class="tm-dream-focus-grid">
+        <article class="tm-dream-focus-main">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%231a2148'/%3E%3Cstop offset='0.6' stop-color='%233b2d63'/%3E%3Cstop offset='1' stop-color='%23ff8f6b' stop-opacity='0.55'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='450' fill='url(%23sky)'/%3E%3Ccircle cx='400' cy='300' r='120' fill='%23ffd08a' opacity='0.35'/%3E%3Cpath d='M0 340 L180 250 L330 320 L520 220 L700 300 L800 260 L800 450 L0 450 Z' fill='%230f1526' opacity='0.85'/%3E%3Cg fill='%23ffffff' opacity='0.7'%3E%3Ccircle cx='150' cy='90' r='2.4'/%3E%3Ccircle cx='260' cy='60' r='1.8'/%3E%3Ccircle cx='520' cy='78' r='2.2'/%3E%3Ccircle cx='640' cy='130' r='1.6'/%3E%3Ccircle cx='360' cy='120' r='1.4'/%3E%3C/g%3E%3Crect x='330' y='360' width='140' height='8' rx='4' fill='%232ee6a6' opacity='0.85'/%3E%3Cpath d='M392 300 L432 340 L352 340 Z' fill='%232ee6a6' opacity='0.8'/%3E%3C/svg%3E" alt="夜航梦境 MV 首映封面：紫色渐变天空下的月升与山脊剪影" width="800" height="450">
+          <div class="tm-dream-focus-body">
+            <span class="tm-dream-tag">官方首映</span><span class="tm-dream-tag">原创 MV</span><span class="tm-dream-tag">高清</span>
+            <h3>《夜航梦境》概念 MV 首映：一支关于城市失眠者的影像长镜</h3>
+            <p>导演组用三段长镜头串起凌晨两点的通勤地铁、便利店暖光和天台月色，把“丶天美丶梦幻丶mv入口”这个名字里那种漂浮感拍成了具体的街景。全片采用原生 4K 拍摄，正版配乐由平台合作音乐人授权。</p>
+            <div class="tm-dream-meta">
+              <span>创作者：林屿川</span><span>播放 128.6 万</span><span>点赞 4.8 万</span><span>更新于 11 月 20 日</span>
+            </div>
+          </div>
+        </article>
+        <div class="tm-dream-mini-list">
+          <article class="tm-dream-mini">
+            <span class="tm-dream-mini-idx">01</span>
+            <div>
+              <h4>《雨中胶片》手绘动画 MV：12 位插画师接力完成</h4>
+              <p>纪念胶片时代的影像实验，每一帧都由水墨色块构成。</p>
+              <div class="tm-dream-mini-meta">创作幕后 · 播放 62.4 万 · 收藏 1.9 万</div>
+            </div>
+          </article>
+          <article class="tm-dream-mini">
+            <span class="tm-dream-mini-idx">02</span>
+            <div>
+              <h4>城市探索：在旧录像厅拍一支复古 MV 的完整攻略</h4>
+              <p>场景选址、灯光布置、手持稳定技巧一次讲清。</p>
+              <div class="tm-dream-mini-meta">教程干货 · 播放 47.2 万 · 收藏 2.3 万</div>
+            </div>
+          </article>
+          <article class="tm-dream-mini">
+            <span class="tm-dream-mini-idx">03</span>
+            <div>
+              <h4>音乐人访谈：把 Demo 做成成片，中间差了什么</h4>
+              <p>与三位独立音乐人对谈，讲述音频与画面如何互相成就。</p>
+              <div class="tm-dream-mini-meta">人物访谈 · 播放 39.8 万 · 点赞 1.4 万</div>
+            </div>
+          </article>
+          <article class="tm-dream-mini">
+            <span class="tm-dream-mini-idx">04</span>
+            <div>
+              <h4>梦幻影像季 2026 冬季征片公告与赛道说明</h4>
+              <p>四大原创赛道、评审阵容与投稿节点，报名通道已开启。</p>
+              <div class="tm-dream-mini-meta">官方发布 · 阅读 12.7 万 · 报名中</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MV 视频库 -->
+  <section class="tm-dream-section" id="tm-dream-videos">
+    <div class="tm-dream-wrap">
+      <div class="tm-dream-sec-head">
+        <div>
+          <div class="tm-dream-sec-kicker">VIDEO LIBRARY · MV 视频库</div>
+          <h2>梦幻 MV 精选：原创、正版、可收藏的高清影像</h2>
+        </div>
+        <p class="tm-dream-sec-desc">按主题与热度整理，重点作品配封面，其余采用文字索引，方便快速浏览与收藏。</p>
+      </div>
+      <div class="tm-dream-video-layout">
+        <article class="tm-dream-video-feature">
+          <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 450'%3E%3Crect width='800' height='450' fill='%23101b2e'/%3E%3Cg fill='none' stroke='%232ee6a6' stroke-width='2' opacity='0.7'%3E%3Ccircle cx='400' cy='225' r='140'/%3E%3Ccircle cx='400' cy='225' r='100'/%3E%3C/g%3E%3Cg stroke='%238b7bff' stroke-width='1.3' opacity='0.6'%3E%3Cpath d='M400 60 L400 390'/%3E%3Cpath d='M235 225 L565 225'/%3E%3Cpath d='M284 109 L516 341'/%3E%3Cpath d='M516 109 L284 341'/%3E%3C/g%3E%3Ccircle cx='400' cy='225' r='34' fill='%232ee6a6' opacity='0.9'/%3E%3Cpath d='M390 208 L418 225 L390 242 Z' fill='%23101b2e'/%3E%3Cg fill='%23ff6f91' opacity='0.75'%3E%3Crect x='120' y='360' width='40' height='5' rx='2.5'/%3E%3Crect x='640' y='360' width='40' height='5' rx='2.5'/%3E%3C/g%3E%3C/svg%3E" alt="频率共振重点 MV 封面：青绿色同心圆与放射线构成的声波视觉" width="800" height="450">
+          <div class="tm-dream-video-feature-body">
+            <span class="tm-dream-tag">重点推荐</span><span class="tm-dream-tag">电子流行</span>
+            <h3>《频率共振》官方 MV：把合成器波形画成可视化的雨</h3>
+            <p>平台年度口碑作品之一，由音频团队与视效团队联合创作。画面随 808 鼓点生成粒子雨，副歌段落切换到实拍舞台，形成虚实交错的高潮。</p>
+            <div class="tm-dream-meta"><span>作者：南野一</span><span>播放 204.3 万</span><span>点赞 9.1 万</span><span>收藏 3.6 万</span></div>
+            <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap;">
+              <button class="tm-dream-like" data-like="0">♡ 点赞</button>
+              <button class="tm-dream-btn tm-dream-btn-2" style="padding:6px 16px;font-size:13px;" data-share="频率共振">分享</button>
+            </div>
+          </div>
+        </article>
+        <div class="tm-dream-video-rows">
+          <div class="tm-dream-vrow">
+            <div class="tm-dream-vrow-thumb">
+              <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 130'%3E%3Crect width='200' height='130' fill='%232a1f3d'/%3E%3Ccircle cx='140' cy='40' r='30' fill='%23ff6f91' opacity='0.5'/%3E%3Cpath d='M0 110 L60 70 L120 100 L200 55' stroke='%232ee6a6' stroke-width='3' fill='none'/%3E%3C/svg%3E" alt="晨雾列车 MV 缩略图：粉紫色圆月与折线山道" width="200" height="130">
+            </div>
+            <div class="tm-dream-vrow-main">
+              <h4>《晨雾列车》电影感 MV</h4>
+              <p>跟随一趟早班列车，拍下窗外的雾气与晨光。</p>
+              <div class="tm-dream-meta"><span>作者：苏沐橙</span><span>播放 86.1 万</span></div>
+            </div>
+            <div class="tm-dream-vrow-side">
+              <span class="tm-dream-num">收藏 1.2 万</span>
+              <button class="tm-dream-like on" data-like="1">♥ 已赞</button>
+            </div>
+          </div>
+          <div class="tm-dream-vrow">
+            <div class="tm-dream-vrow-thumb">
+              <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 130'%3E%3Crect width='200' height='130' fill='%23162034'/%3E%3Cg fill='%238b7bff' opacity='0.75'%3E%3Crect x='30' y='80' width='14' height='30'/%3E%3Crect x='56' y='60' width='14' height='50'/%3E%3Crect x='82' y='40' width='14' height='70'/%3E%3Crect x='108' y='66' width='14' height='44'/%3E%3Crect x='134' y='52' width='14' height='58'/%3E%3C/g%3E%3C/svg%3E" alt="手作风铃 MV 缩略图：深蓝背景中高低错落的紫色音柱" width="200" height="130">
+            </div>
+            <div class="tm-dream-vrow-main">
+              <h4>《手作风铃》DIY 声音实验</h4>
+              <p>用回收铝片做一把风铃，再为它写一首歌。</p>
+              <div class="tm-dream-meta"><span>作者：陶小野</span><span>播放 54.7 万</span></div>
+            </div>
+            <div class="tm-dream-vrow-side">
+              <span class="tm-dream-num">收藏 9,240</span>
+              <button class="tm-dream-like" data-like="2">♡ 点赞</button>
+            </div>
+          </div>
+          <div class="tm-dream-vrow">
+            <div class="tm-dream-vrow-thumb">
+              <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 130'%3E%3Crect width='200' height='130' fill='%23203333'/%3E%3Ccircle cx='100' cy='65' r='42' fill='none' stroke='%232ee6a6' stroke-width='2'/%3E%3Cpath d='M100 30 L100 100 M65 65 L135 65' stroke='%232ee6a6' stroke-width='1.2' opacity='0.6'/%3E%3Ccircle cx='100' cy='65' r='12' fill='%23ffce6b'/%3E%3C/svg%3E" alt="像素心跳 MV 缩略图：墨绿底色上的准星与金色圆点" width="200" height="130">
+            </div>
+            <div class="tm-dream-vrow-main">
+              <h4>《像素心跳》8-bit 复古 MV</h4>
+              <p>把一段青春记忆写进 16 位色板里。</p>
+              <div class="tm-dream-meta"><span>作者：秦时七</span><span>播放 71.5 万</span></div>
+            </div>
+            <div class="tm-dream-vrow-side">
+              <span class="tm-dream-num">收藏 1.5 万</span>
+              <button class="tm-dream-like" data-like="3">♡ 点赞</button>
+            </div>
+          </div>
+          <div class="tm-dream-vrow">
+            <div class="tm-dream-vrow-thumb">
+              <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 130'%3E%3Crect width='200' height='130' fill='%23352a1e'/%3E%3Cpath d='M0 100 Q50 60 100 90 T200 70' stroke='%23ffce6b' stroke-width='3' fill='none'/%3E%3Ccircle cx='160' cy='40' r='16' fill='%23ff6f91' opacity='0.6'/%3E%3C/svg%3E" alt="海风与木吉他 MV 缩略图：暖棕背景与金色波浪线" width="200" height="130">
+            </div>
+            <div class="tm-dream-vrow-main">
+              <h4>《海风与木吉他》户外现场版</h4>
+              <p>沙滩收音、单机位长拍，尽量保留环境的呼吸声。</p>
+              <div class="tm-dream-meta"><span>作者：南野一</span><span>播放 43.9 万</span></div>
+            </div>
+            <div class="tm-dream-vrow-side">
+              <span class="tm-dream-num">收藏 8,160</span>
+              <button class="tm-dream-like" data-like="4">♡ 点赞</button>
+            </div>
+          </div>
+          <div class="tm-dream-vrow">
+            <div class="tm-dream-vrow-thumb">
+              <img src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 130'%3E%3Crect width='200' height='130' fill='%231a1f38'/%3E%3Cg stroke='%238b7bff' stroke-width='2' opacity='0.7'%3E%3Cpath d='M20 100 L20 60 L50 60 L50 100'/%3E%3Cpath d='M70 100 L70 40 L100 40 L100 100'/%3E%3Cpath d='M120 100 L120 70 L150 70 L150 100'/%3E%3C/g%3E%3Ccircle cx='170' cy='45' r='10' fill='%232ee6a6'/%3E%3C/svg%3E" alt="城市夜行 MV 缩略图：深蓝夜里高低楼群与绿色路灯" width="200" height="130">
+            </div>
+            <div class="tm-dream-vrow-main">
+              <h4>《城市夜行》街头实拍 MV</h4>
+              <p>三小时骑行拍摄，记录深夜街区的灯与影。</p>
+              <div class="tm-dream-meta"><span>作者：林屿川</span><span>播放 96.2 万</span></div>
+            </div>
+            <div class="tm-dream-vrow-side">
+              <span class="tm-dream-num">收藏 2.1 万</span>
+              <button class="tm-dream-like on" data-like="5">♥ 已赞</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关键词解析 -->
+  <section class="tm-dream-section tm-dream-parse" id="tm-dream-parse">
+    <div class="tm-dream-wrap">
+      <div class="tm-dream-sec-head">
+        <div>
+          <div class="tm-dream-sec-kicker">BRAND INSIGHT · 深度解析</div>
+          <h2>丶天美丶梦幻丶mv入口 是什么：品牌、内容与影像生态的完整解读</h2>
+        </div>
+        <p class="tm-dream-sec-desc">从名称含义、内容结构到创作者机制，一篇读懂这个原创 MV 视频平台。</p>
+      </div>
+      <div class="tm-dream-parse-grid">
+        <div>
+          <h3>一、名称背后的定位：一个面向梦境叙事的 MV 内容入口</h3>
+          <p>“丶天美丶梦幻丶mv入口”这个关键词组合，本质上指向的是一个以 MV 影像为核心内容的入口型品牌。对普通观众来说，它是一个可以稳定找到高清原创 MV 的地方；对创作者来说，它是一个带有审核、正版授权和分发能力的官方平台。我们把它定位为“梦幻影像视频社区”——既不是单纯的短视频信息流，也不是传统的音乐播放器，而是把音乐、画面与幕后故事组织在一起的垂直内容空间。只要输入这个关键词，用户就应当能抵达一个结构清晰、更新稳定、作品可查的官网首页。</p>
+          <p>在品牌命名上，“梦幻”指向的是内容的审美基调：它鼓励那些带有想象力的、超现实的、情绪浓度高的影像表达；“MV 入口”则明确了功能属性，即这个平台是观看与发布音乐影像的第一站。因此，我们在页面的每个板块都围绕“入口”做设计：导航入口、搜索入口、专题入口、投稿入口、创作者入口，让不同身份的用户都能在三次点击内找到自己想要的内容。这也是官方网站区别于聚合页面的根本价值：信息是被精心组织过的，而不是被动堆叠的。</p>
+          <h3>二、内容结构：从首映焦点到视频库的完整分发链路</h3>
+          <p>作为一个企业级品牌官网，丶天美丶梦幻丶mv入口的内容结构分为四层。第一层是首映焦点，每周由编辑部遴选 1 支重点大图和 3 至 5 项文字推荐，帮助用户快速建立对本周内容质量的预期。第二层是 MV 视频库，按主题、风格与热度整理，重点作品配 16:9 封面，其余采用文字列表，每个条目都包含标题、摘要、标签、作者、播放数据与操作按钮，保证信息密度与可浏览性。第三层是专题企划，围绕季节性征片、主题创作挑战和行业观察组织内容。第四层是创作者矩阵与榜单，让优质作者获得持续曝光，也让用户能按口碑与热度选择观看。</p>
+          <p>这套链路的核心逻辑是“可发现性”。很多视频平台的问题不是内容不够，而是好内容找不到。我们通过标签体系、作者档案、专题目录、榜单与搜索建议五个维度交叉索引，使每一支原创 MV 都能被至少一条路径触达。对于内容生态而言，这种结构化的组织方式比无限下滑的信息流更有利于长尾作品积累播放与口碑，也让创作者愿意持续投入更高成本的制作。持续运营的关键，正是让认真做内容的人被看见。</p>
+          <h3>三、创作者机制：正版授权、分级合作与成长陪伴</h3>
+          <p>平台对创作者的支撑分为三个层次。基础层是入驻与发布，任何符合条件的原创作者都可以通过投稿入口提交作品，平台提供清晰的技术规范，包括分辨率、码率、音频响度与封面尺寸，避免因格式问题浪费沟通成本。合作层是正版授权与联合出品，针对使用第三方音乐、素材或演员肖像的作品，平台提供合同模板与版权校验流程，帮助作者规避风险。成长层是流量扶持与商业对接，包括新人榜曝光、专题邀约、品牌联名项目与线下放映活动。</p>
+          <p>我们特别重视“陪伴”这个词。影像创作是长周期、高投入的工作，一支三分钟的 MV 背后可能是两个月的筹备。平台通过创作幕后栏目、导演手记与访谈内容，把过程中的犹豫、试错与惊喜记录下来，让观众理解画面之外的工作量，也让新入行的创作者有可参考的路径。这种真实感是社区活力的来源，也是品牌区别于冷冰冰的分发工具的地方。我们相信，值得信赖的平台不是只提供播放量，而是提供方法、机会与同行者。</p>
+          <h3>四、品牌价值与社会责任：让高清正版成为默认选项</h3>
+          <p>在影像内容领域，版权与画质是两个绕不开的基础问题。丶天美丶梦幻丶mv入口坚持正版授权优先，对平台首映与合作内容进行素材溯源与授权备案；在技术侧，提供高清播放与多码率适配，确保在不同网络环境下都能获得稳定的观看体验。同时，平台定期发布行业观察内容，讨论拍摄设备选择、后期流程优化、音乐版权常识等实用话题，降低新创作者的学习门槛，这也是我们理解的行业责任。</p>
+          <p>面向未来，我们计划把梦幻影像季做成常态化的年度项目，增加比赛赛道、公开评审与投票环节，让用户参与到内容选择中；同时扩展地域合作，与不同城市的影像团队共同制作在地文化短片，把城市探索与生活方式内容纳入 MV 生态。我们希望这个品牌不只是一个关键词，而是一代创作者共同的成长坐标。无论你是观众、音乐人还是导演，只要你想把一段旋律变成画面，这里都应该是一个值得信赖的起点。</p>
+        </div>
+        <aside class="tm-dream-parse-card">
+          <h4>品牌速览</h4>
+          <ul>
+            <li><span>品牌定位</span><b>原创 MV 视频社区</b></li>
+            <li><span>内容方向</span><b>音乐影像 / 幕后 / 专题</b></li>
+            <li><span>核心主张</span><b>正版 · 高清 · 陪伴成长</b></li>
+            <li><span>入驻创作者</span><b>420 位</b></li>
+            <li><span>作品总量</span><b>2,860+ 支</b></li>
+            <li><span>年度项目</span><b>梦幻影像季</b></li>
+            <li><span>更新节奏</span><b>每周四首映</b></li>
+            <li><span>运营状态</span><b>持续运营中</b></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="tm-dream-section" id="tm-dream-topics">
+    <div class="tm-dream-wrap">
+      <div class="tm-dream-sec-head">
+        <div>
+          <div class="tm-dream-sec-kicker">SERIES · 专题企划</div>
+          <h2>专题与企划：围绕梦幻 MV 的长期内容项目</h2>
+        </div>
+        <p class="tm-dream-sec-desc">每个专题都包含固定更新节奏、内容方向与参与方式，欢迎创作者报名加入。</p>
+      </div>
+      <div class="tm-dream-topic-grid">
+        <article class="tm-dream-topic">
+          <span class="tm-dream-status">更新中 · 每周二</span>
+          <h3>梦境取样计划</h3>
+          <p class="tm-dream-topic-desc">邀请创作者用一支 MV 描述一个自己反复做过的梦，强调超现实构图与声音设计。</p>
+          <ul>
+            <li>《坠落在便利店》概念短片</li>
+            <li>《第七次日落》长镜头实验</li>
+            <li>《没有出口的楼梯》定格动画</li>
+          </ul>
+        </article>
+        <article class="tm-dream-topic">
+          <span class="tm-dream-status">报名中 · 截止 12/20</span>
+          <h3>梦幻影像季 2026 冬季征片</h3>
+          <p class="tm-dream-topic-desc">四个赛道：原创 MV、幕后纪录、城市短片、声音实验。公开评审与用户投票同步进行。</p>
+          <ul>
+            <li>赛道说明与投稿规范</li>
+            <li>评审阵容与评选标准</li>
+            <li>往届获奖作品回顾</li>
+          </ul>
+        </article>
+        <article class="tm-dream-topic">
+          <span class="tm-dream-status">连载中 · 双周更新</span>
+          <h3>一支 MV 的诞生</h3>
+          <p class="tm-dream-topic-desc">从分镜到调色，完整跟拍一支作品的全流程，记录真实预算、真实难题与真实取舍。</p>
+          <ul>
+            <li>第 3 集：如何在雨天完成外景</li>
+            <li>第 4 集：低成本灯光布置清单</li>
+            <li>第 5 集：调色与情绪关系拆解</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者 -->
+  <section class="tm-dream-section" id="tm-dream-authors">
+    <div class="tm-dream-wrap">
+      <div class="tm-dream-sec-head">
+        <div>
+          <div class="tm-dream-sec-kicker">CREATORS · 创作者矩阵</div>
+          <h2>平台签约创作者：真实、专业、风格各异的影像作者</h2>
+        </div>
+        <p class="tm-dream-sec-desc">点击“作者档案”可查看简介与代表作品，所有数据每周更新。</p>
+      </div>
+      <div class="tm-dream-author-grid">
+        <article class="tm-dream-author">
+          <div class="tm-dream-avatar" style="background:linear-gradient(135deg,#2ee6a6,#37d9ff);">林</div>
+          <h3>林屿川</h3>
+          <div class="tm-dream-author-field">城市影像 · 长镜头</div>
+          <p>擅长在真实街景中寻找叙事支点，偏好自然光与手持长拍。代表作《城市夜行》《夜航梦境》，拍摄前习惯独自走完全部路线。</p>
+          <div class="tm-dream-author-nums"><span>作品 <b>86</b></span><span>粉丝 <b>42.6 万</b></span></div>
+          <div class="tm-dream-author-more"><button data-author="林屿川">作者档案</button></div>
+        </article>
+        <article class="tm-dream-author">
+          <div class="tm-dream-avatar" style="background:linear-gradient(135deg,#8b7bff,#ff6f91);">南</div>
+          <h3>南野一</h3>
+          <div class="tm-dream-author-field">电子音乐 · 视效</div>
+          <p>音乐制作人兼视觉设计师，长期研究声音可视化。作品强调节奏与画面的同步感，会为每首歌单独编写粒子参数。</p>
+          <div class="tm-dream-author-nums"><span>作品 <b>64</b></span><span>粉丝 <b>38.2 万</b></span></div>
+          <div class="tm-dream-author-more"><button data-author="南野一">作者档案</button></div>
+        </article>
+        <article class="tm-dream-author">
+          <div class="tm-dream-avatar" style="background:linear-gradient(135deg,#ffce6b,#ff8f6b);">苏</div>
+          <h3>苏沐橙</h3>
+          <div class="tm-dream-author-field">旅行记录 · 电影感调色</div>
+          <p>偏爱清晨与黄昏的柔光，常用一支定焦走完全程。作品注重环境的呼吸感，附录音均为现场采集。</p>
+          <div class="tm-dream-author-nums"><span>作品 <b>53</b></span><span>粉丝 <b>27.9 万</b></span></div>
+          <div class="tm-dream-author-more"><button data-author="苏沐橙">作者档案</button></div>
+        </article>
+        <article class="tm-dream-author">
+          <div class="tm-dream-avatar" style="background:linear-gradient(135deg,#37d9ff,#8b7bff);">秦</div>
+          <h3>秦时七</h3>
+          <div class="tm-dream-author-field">复古动画 · 像素艺术</div>
+          <p>独立动画师，专注 8-bit 与 16-bit 风格的 MV 创作。习惯先在纸上画完分镜再进软件，认为限制色板反而能激发创意。</p>
+          <div class="tm-dream-author-nums"><span>作品 <b>41</b></span><span>粉丝 <b>19.4 万</b></span></div>
+          <div class="tm-dream-author-more"><button data-author="秦时七">作者档案</button></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 榜单 -->
+  <section class="tm-dream-section" id="tm-dream-rank">
+    <div class="tm-dream-wrap">
+      <div class="tm-dream-sec-head">
+        <div>
+          <div class="tm-dream-sec-kicker">CHARTS · 数据榜单</div>
+          <h2>热度榜、新人榜与口碑榜：用数据看见品质</h2>
+        </div>
+        <p class="tm-dream-sec-desc">榜单基于近 30 天播放、收藏与完播率综合计算，每周一更新。</p>
+      </div>
+      <div class="tm-dream-rank-grid">
+        <div class="tm-dream-rank-card">
+          <h3><span></span>本周热度榜</h3>
+          <ul>
+            <li><i class="tm-dream-rank-no">1</i>《频率共振》官方 MV</li>
+            <li><i class="tm-dream-rank-no">2</i>《夜航梦境》概念首映</li>
+            <li><i class="tm-dream-rank-no">3</i>《城市夜行》街头实拍</li>
+            <li><i class="tm-dream-rank-no">4</i>《晨雾列车》电影感 MV</li>
+            <li><i class="tm-dream-rank-no">5</i>《像素心跳》复古 MV</li>
+          </ul>
+        </div>
+        <div class="tm-dream-rank-card">
+          <h3><span></span>新人榜</h3>
+          <ul>
+            <li><i class="tm-dream-rank-no">1</i>半山影像 · 首作《回声》</li>
+            <li><i class="tm-dream-rank-no">2</i>阿岚 · 手账式定格 MV</li>
+            <li><i class="tm-dream-rank-no">3</i>许一舟 · 校园乐队现场</li>
+            <li><i class="tm-dream-rank-no">4</i>木木七 · 夜景霓虹实验</li>
+            <li><i class="tm-dream-rank-no">5</i>桑榆 · 旧物故事短片</li>
+          </ul>
+        </div>
+        <div class="tm-dream-rank-card">
+          <h3><span></span>口碑榜</h3>
+          <ul>
+            <li><i class="tm-dream-rank-no">1</i>《雨中胶片》手绘动画 MV</li>
+            <li><i class="tm-dream-rank-no">2</i>《海风与木吉他》现场版</li>
+            <li><i class="tm-dream-rank-no">3</i>《手作风铃》声音实验</li>
+            <li><i class="tm-dream-rank-no">4</i>《第七次日落》长镜头</li>
+            <li><i class="tm-dream-rank-no">5</i>《旧录像厅》城市短片</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评价 -->
+  <section class="tm-dream-section" id="tm-dream-comments">
+    <div class="tm-dream-wrap">
+      <div class="tm-dream-sec-head">
+        <div>
+          <div class="tm-dream-sec-kicker">VOICES · 用户评价</div>
+          <h2>来自观众与创作者的真实反馈</h2>
+        </div>
+        <p class="tm-dream-sec-desc">评价来自站内作品评论区与影像季活动回访问卷，保留原始语气。</p>
+      </div>
+      <div class="tm-dream-comment-grid">
+        <article class="tm-dream-comment">
+          <div class="tm-dream-comment-top"><span class="tm-dream-comment-avatar" style="background:#2ee6a6;">陈</span><div><b>陈默的放映机</b><span>观众 · 观看 3 年</span></div></div>
+          <p>画质真的很稳，4K 版本在投影上看几乎没有压缩痕迹。最喜欢的是每支 MV 都配了幕后说明，看完正片再看创作过程，体验很完整。</p>
+          <div class="tm-dream-stars">★★★★★</div>
+        </article>
+        <article class="tm-dream-comment">
+          <div class="tm-dream-comment-top"><span class="tm-dream-comment-avatar" style="background:#8b7bff;">半</span><div><b>半山影像</b><span>创作者 · 新人榜作者</span></div></div>
+          <p>第一次投稿就被安排进了新人榜，编辑还给了很具体的封面修改建议。对新人来说，这种反馈比单纯的播放量更有用。</p>
+          <div class="tm-dream-stars">★★★★★</div>
+        </article>
+        <article class="tm-dream-comment">
+          <div class="tm-dream-comment-top"><span class="tm-dream-comment-avatar" style="background:#ffce6b;">阿</span><div><b>阿岚</b><span>创作者 · 定格动画</span></div></div>
+          <p>版权校验流程比我预想的细致，音乐授权那一步帮我避免了一个大坑。希望后面能增加更多可商用的配乐库。</p>
+          <div class="tm-dream-stars">★★★★☆</div>
+        </article>
+        <article class="tm-dream-comment">
+          <div class="tm-dream-comment-top"><span class="tm-dream-comment-avatar" style="background:#ff6f91;">木</span><div><b>木木七</b><span>观众 · 收藏 240 支</span></div></div>
+          <p>专题做得很好，尤其是“梦境取样计划”，风格统一但不重复。就是有时候更新节奏有点慢，希望每周能多一支。</p>
+          <div class="tm-dream-stars">★★★★☆</div>
+        </article>
+        <article class="tm-dream-comment">
+          <div class="tm-dream-comment-top"><span class="tm-dream-comment-avatar" style="background:#37d9ff;">许</span><div><b>许一舟</b><span>创作者 · 校园乐队</span></div></div>
+          <p>用手机拍的作品也能上首页推荐，这点让我挺意外。平台在意的好像是画面里的想法，而不只是设备参数。</p>
+          <div class="tm-dream-stars">★★★★★</div>
+        </article>
+        <article class="tm-dream-comment">
+          <div class="tm-dream-comment-top"><span class="tm-dream-comment-avatar" style="background:#2ee6a6;">周</span><div><b>周周看片</b><span>观众 · 每周四首映常客</span></div></div>
+          <p>搜索很好用，输入风格关键词能直接筛出对应的作品。唯一建议是希望能按拍摄地筛选，找本地题材会方便很多。</p>
+          <div class="tm-dream-stars">★★★★☆</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业动态 -->
+  <section class="tm-dream-section" id="tm-dream-news">
+    <div class="tm-dream-wrap">
+      <div class="tm-dream-sec-head">
+        <div>
+          <div class="tm-dream-sec-kicker">NEWS · 企业动态</div>
+          <h2>丶天美丶梦幻丶mv入口 官方发布与平台更新</h2>
+        </div>
+        <p class="tm-dream-sec-desc">品牌公告、功能升级与活动信息，均在官网第一时间发布。</p>
+      </div>
+      <div class="tm-dream-news-grid">
+        <article class="tm-dream-news">
+          <div class="tm-dream-news-time">11/20<br>2026</div>
+          <div>
+            <h4>2026 梦幻影像季冬季征片正式开启</h4>
+            <p>新增原创 MV、幕后纪录、城市短片、声音实验四个赛道，投稿截止 12 月 20 日，评审团名单同步公布。</p>
+          </div>
+        </article>
+        <article class="tm-dream-news">
+          <div class="tm-dream-news-time">11/16<br>2026</div>
+          <div>
+            <h4>播放器升级：支持手动切换清晰度与音轨</h4>
+            <p>本次更新优化了弱网环境下的首帧加载速度，并新增多音轨切换，方便观看现场收音版本。</p>
+          </div>
+        </article>
+        <article class="tm-dream-news">
+          <div class="tm-dream-news-time">11/09<br>2026</div>
+          <div>
+            <h4>与十二家独立音乐厂牌达成正版授权合作</h4>
+            <p>合作曲库将向入驻创作者开放申请，用于非商业原创 MV 制作，申请流程详见帮助中心。</p>
+          </div>
+        </article>
+        <article class="tm-dream-news">
+          <div class="tm-dream-news-time">11/02<br>2026</div>
+          <div>
+            <h4>“一支 MV 的诞生”系列纪录片上线</h4>
+            <p>跟拍三位创作者的全流程制作，每双周更新一集，配套图文版工作清单可下载。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="tm-dream-section" id="tm-dream-faq">
+    <div class="tm-dream-wrap">
+      <div class="tm-dream-sec-head">
+        <div>
+          <div class="tm-dream-sec-kicker">HELP · 常见问题</div>
+          <h2>关于观看、投稿与版权的高频问题</h2>
+        </div>
+        <p class="tm-dream-sec-desc">仍有疑问可通过投稿入口的留言功能联系运营团队。</p>
+      </div>
+      <div class="tm-dream-faq">
+        <details open>
+          <summary>如何找到丶天美丶梦幻丶mv入口的最新首映内容？</summary>
+          <p>官网首页的焦点推荐区每周四更新，集中展示当周首映的重点作品与文字推荐；也可以通过导航中的“MV 视频库”按标签浏览全部作品。</p>
+        </details>
+        <details>
+          <summary>投稿需要满足哪些技术规范？</summary>
+          <p>建议提交 1920×1080 以上分辨率、H.264 编码的成片，音频响度控制在 -16 LUFS 左右，封面比例为 16:9。若使用了第三方音乐或素材，请一并提供授权说明。</p>
+        </details>
+        <details>
+          <summary>平台对原创作品有哪些扶持？</summary>
+          <p>包括新人榜曝光、专题邀约、联合出品对接、线下放映机会以及品牌项目推荐。具体权益会随作品质量与更新频率动态评估。</p>
+        </details>
+        <details>
+          <summary>观看需要付费吗？</summary>
+          <p>当前所有已上线的 MV 内容均可免费观看。部分合作作品的超高清版本与线下活动可能需要预约，具体以页面标注为准。</p>
+        </details>
+        <details>
+          <summary>发现作品存在版权问题怎么办？</summary>
+          <p>可在作品页通过分享与反馈入口提交说明，并附上权属证明。平台承诺在五个工作日内完成初步核查并回复处理结果。</p>
+        </details>
+        <details>
+          <summary>可以转载平台上的 MV 吗？</summary>
+          <p>需获得作者与平台的书面授权，并在显著位置标注出处与作者信息。商业用途请通过联系入口洽谈，严禁直接搬运或二次剪辑。</p>
+        </details>
+      </div>
+
+      <div class="tm-dream-partner-grid" style="margin-top:30px;">
+        <div class="tm-dream-partner">拾光音乐厂牌</div>
+        <div class="tm-dream-partner">北岸影像工作室</div>
+        <div class="tm-dream-partner">声场实验室</div>
+        <div class="tm-dream-partner">胶片记忆档案馆</div>
+        <div class="tm-dream-partner">城市放映计划</div>
+      </div>
+
+      <div class="tm-dream-submit">
+        <div>
+          <h3>把你的 MV 放上首页</h3>
+          <p>投稿通道长期开放，支持原创 MV、幕后纪录与声音实验。通过审核后将进入专题与榜单的推荐池。</p>
+        </div>
+        <button class="tm-dream-btn" id="tmDreamSubmitBtn2" type="button">立即投稿</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="tm-dream-footer">
+  <div class="tm-dream-wrap">
+    <div class="tm-dream-footer-grid">
+      <div class="tm-dream-footer-about">
+        <h4>丶天美丶梦幻丶MV 官方网站</h4>
+        <p>面向创作者与音乐人的原创 MV 视频平台，坚持正版授权、高清出品与持续运营，为影像内容生态提供稳定、可信赖的发布与观看入口。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#tm-dream-focus">焦点推荐</a></li>
+          <li><a href="#tm-dream-videos">MV 视频库</a></li>
+          <li><a href="#tm-dream-topics">专题企划</a></li>
+          <li><a href="#tm-dream-rank">数据榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>创作者服务</h4>
+        <ul>
+          <li><a href="#tm-dream-authors">创作者矩阵</a></li>
+          <li><a href="#tm-dream-faq">投稿规范</a></li>
+          <li><a href="#tm-dream-news">企业动态</a></li>
+          <li><a href="#tm-dream-comments">用户评价</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>关于品牌</h4>
+        <ul>
+          <li>品牌故事与理念</li>
+          <li>正版授权说明</li>
+          <li>社区公约</li>
+          <li>合作与联系</li>
+        </ul>
+      </div>
+    </div>
+    <div class="tm-dream-footer-bottom">
+      <span>© 2026 丶天美丶梦幻丶MV 品牌官网 · 版权所有 · 持续运营中</span>
+      <span>原创内容受版权保护 · 备案号：示意-2026-0000</span>
+    </div>
+  </div>
+</footer>
+
+<div class="tm-dream-modal" id="tmDreamModal">
+  <div class="tm-dream-modal-box">
+    <button class="tm-dream-modal-close" id="tmDreamModalClose" type="button">✕</button>
+    <h3 id="tmDreamModalTitle">投稿入口</h3>
+    <p id="tmDreamModalDesc">填写基础信息后，运营团队会在一周内回复。请确保作品为原创或已获得完整授权。</p>
+    <form id="tmDreamForm">
+      <div class="tm-dream-field"><label for="tmDreamFormName">称呼</label><input id="tmDreamFormName" type="text" placeholder="你的昵称或团队名"></div>
+      <div class="tm-dream-field"><label for="tmDreamFormContact">联系方式</label><input id="tmDreamFormContact" type="text" placeholder="邮箱或社交账号"></div>
+      <div class="tm-dream-field"><label for="tmDreamFormMsg">作品说明</label><textarea id="tmDreamFormMsg" rows="3" placeholder="作品标题、时长与版权情况"></textarea></div>
+      <div class="tm-dream-modal-actions">
+        <button class="tm-dream-btn" type="submit">提交</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="tm-dream-toast" id="tmDreamToast" role="status" aria-live="polite"></div>
+<button class="tm-dream-top" id="tmDreamTop" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var toastEl = document.getElementById('tmDreamToast');
+  var toastTimer = null;
+  function showToast(msg){
+    if(!toastEl) return;
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('show'); }, 2200);
+  }
+
+  /* 移动端导航 */
+  var burger = document.getElementById('tmDreamBurger');
+  var mobNav = document.getElementById('tmDreamMobileNav');
+  if(burger && mobNav){
+    burger.addEventListener('click', function(){
+      var open = mobNav.classList.toggle('open');
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    mobNav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){
+        mobNav.classList.remove('open');
+        burger.setAttribute('aria-expanded','false');
+      });
+    });
+  }
+
+  /* 搜索反馈 */
+  var searchInput = document.getElementById('tmDreamSearchInput');
+  var searchBtn = document.getElementById('tmDreamSearchBtn');
+  var feedback = document.createElement('div');
+  feedback.className = 'tm-dream-search-feedback';
+  feedback.id = 'tmDreamSearchFeedback';
+  if(searchInput){
+    var headTools = searchInput.closest('.tm-dream-head-tools');
+    if(headTools){
+      headTools.parentNode.insertBefore(feedback, headTools.nextSibling);
+    }
+    function runSearch(){
+      var kw = (searchInput.value || '').trim();
+      if(!kw){
+        feedback.textContent = '请输入 MV 名称、作者或专题关键词';
+        showToast('请输入关键词后再搜索');
+        return;
+      }
+      var lower = kw.toLowerCase();
+      var map = [
+        { keys:['夜航','林屿','长镜头','城市'], target:'tm-dream-videos', label:'MV 视频库' },
+        { keys:['专题','征片','企划','影像季'], target:'tm-dream-topics', label:'专题企划' },
+        { keys:['作者','创作者','南野','苏沐','秦时'], target:'tm-dream-authors', label:'创作者矩阵' },
+        { keys:['榜','排名','热度','新人','口碑'], target:'tm-dream-rank', label:'数据榜单' },
+        { keys:['投稿','合作','授权','版权'], target:'tm-dream-faq', label:'帮助与FAQ' }
+      ];
+      var hit = null;
+      for(var i=0;i<map.length;i++){
+        for(var j=0;j<map[i].keys.length;j++){
+          if(lower.indexOf(map[i].keys[j].toLowerCase()) > -1){ hit = map[i]; break; }
+        }
+        if(hit) break;
+      }
+      if(hit){
+        feedback.textContent = '已为你定位到「' + hit.label + '」相关结果，正在跳转…';
+        var el = document.getElementById(hit.target);
+        if(el){ el.scrollIntoView({behavior:'smooth', block:'start'}); }
+      }else{
+        feedback.textContent = '暂未找到“' + kw + '”的直接匹配，试试「MV」「专题」「创作者」等关键词';
+        showToast('未找到匹配内容，已给出搜索建议');
+      }
+    }
+    searchBtn.addEventListener('click', runSearch);
+    searchInput.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); runSearch(); }
+    });
+    searchInput.addEventListener('input', function(){
+      var v = (searchInput.value || '').trim();
+      feedback.textContent = v ? '正在匹配关键词：“' + v + '”' : '';
+    });
+  }
+
+  /* 点赞切换 */
+  document.querySelectorAll('[data-like]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('on');
+      var base = btn.textContent.replace(/[♡♥]\s*/g,'').trim();
+      btn.textContent = (on ? '♥ ' : '♡ ') + base;
+      showToast(on ? '已点赞，感谢你的支持' : '已取消点赞');
+    });
+  });
+
+  /* 分享 */
+  document.querySelectorAll('[data-share]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var title = btn.getAttribute('data-share') || '这支 MV';
+      var text = '推荐你观看《' + title + '》—— 丶天美丶梦幻丶MV 官方网站原创影像。';
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(function(){
+          showToast('分享文案已复制到剪贴板');
+        }).catch(function(){
+          showToast('分享文案：' + text);
+        });
+      }else{
+        showToast('分享文案：' + text);
+      }
+    });
+  });
+
+  /* 弹窗 */
+  var modal = document.getElementById('tmDreamModal');
+  var modalTitle = document.getElementById('tmDreamModalTitle');
+  var modalDesc = document.getElementById('tmDreamModalDesc');
+  var modalClose = document.getElementById('tmDreamModalClose');
+  var modalForm = document.getElementById('tmDreamForm');
+
+  function openModal(title, desc){
+    if(!modal) return;
+    if(title && modalTitle) modalTitle.textContent = title;
+    if(desc && modalDesc) modalDesc.textContent = desc;
+    modal.classList.add('open');
+  }
+  function closeModal(){
+    if(modal) modal.classList.remove('open');
+  }
+
+  var submitBtns = [document.getElementById('tmDreamSubmitBtn'), document.getElementById('tmDreamSubmitBtn2')];
+  submitBtns.forEach(function(b){
+    if(b){
+      b.addEventListener('click', function(){
+        openModal('投稿入口', '填写基础信息后，运营团队会在一周内回复。请确保作品为原创或已获得完整授权。');
+      });
+    }
+  });
+
+  document.querySelectorAll('[data-author]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var name = btn.getAttribute('data-author');
+      var descMap = {
+        '林屿川':'城市影像创作者，偏好自然光与手持长拍。代表作《城市夜行》《夜航梦境》，作品累计播放超过 600 万次。',
+        '南野一':'音乐制作人兼视觉设计师，专注声音可视化与电子流行 MV 创作，多支作品入选平台年度口碑榜。',
+        '苏沐橙':'旅行影像作者，擅长电影感调色与现场收音，习惯用一支定焦完成整段旅程的拍摄。',
+        '秦时七':'独立动画师，专注像素与复古动画风格，作品色板克制但情绪饱满，是新人榜常客。'
+      };
+      openModal(name + ' · 作者档案', descMap[name] || '该创作者暂无更多公开信息，可通过投稿入口联系运营团队获取合作方式。');
+    });
+  });
+
+  if(modalClose) modalClose.addEventListener('click', closeModal);
+  if(modal){
+    modal.addEventListener('click', function(e){
+      if(e.target === modal) closeModal();
+    });
+  }
+  if(modalForm){
+    modalForm.addEventListener('submit', function(e){
+      e.preventDefault();
+      closeModal();
+      showToast('已收到投稿信息，我们会在 7 个工作日内联系你');
+      modalForm.reset();
+    });
+  }
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('tmDreamTop');
+  window.addEventListener('scroll', function(){
+    if(!topBtn) return;
+    if(window.scrollY > 600){ topBtn.classList.add('show'); }
+    else{ topBtn.classList.remove('show'); }
+  });
+  if(topBtn){
+    topBtn.addEventListener('click', function(){
+      window.scrollTo({top:0, behavior:'smooth'});
+    });
+  }
+
+  /* 数字滚动 */
+  var stats = document.querySelectorAll('.tm-dream-stat b');
+  function animateStat(el){
+    var raw = el.textContent.replace(/[^\d.]/g,'');
+    var target = parseFloat(raw);
+    if(isNaN(target)) return;
+    var suffix = el.textContent.replace(/[\d.,\s+]/g,'');
+    var isDecimal = el.textContent.indexOf('.') > -1;
+    var start = 0, dur = 900, t0 = null;
+    function step(ts){
+      if(!t0) t0 = ts;
+      var p = Math.min((ts - t0) / dur, 1);
+      var val = target * (p < 1 ? (1 - Math.pow(1 - p, 2)) : 1);
+      el.textContent = (isDecimal ? val.toFixed(1) : Math.round(val).toLocaleString('en-US')) + suffix;
+      if(p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          animateStat(en.target);
+          io.unobserve(en.target);
+        }
+      });
+    }, {threshold:0.4});
+    stats.forEach(function(s){ io.observe(s); });
+  }
+})();
+</script>
+</body>
+  </html>
